@@ -15,11 +15,11 @@ class NavigationOneScreen extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => NavigationTwoScreen(),
+                    builder: (context) => const NavigationTwoScreen(),
                   ),
                 );
               },
-              child: Text('Navigasi push'),
+              child: const Text('Navigasi push'),
             )
           ],
         ),
@@ -42,7 +42,7 @@ class NavigationTwoScreen extends StatelessWidget {
               onPressed: () {
                 Navigator.pop(context);
               },
-              child: Text('Navigasi pop'),
+              child: const Text('Navigasi pop'),
             )
           ],
         ),

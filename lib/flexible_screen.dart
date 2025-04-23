@@ -21,7 +21,7 @@ class FlexibleScreen extends StatelessWidget {
 }
 
 class ExpandedWidget extends StatelessWidget {
-  const ExpandedWidget({Key? key}) : super(key: key);
+  const ExpandedWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -31,8 +31,8 @@ class ExpandedWidget extends StatelessWidget {
           color: Colors.teal,
           border: Border.all(color: Colors.white),
         ),
-        child: Padding(
-          padding: const EdgeInsets.all(16.0),
+        child: const Padding(
+          padding: EdgeInsets.all(16.0),
           child: Text(
             'Expanded',
             style: TextStyle(color: Colors.white, fontSize: 24),
@@ -44,7 +44,7 @@ class ExpandedWidget extends StatelessWidget {
 }
 
 class FlexibleWidget extends StatelessWidget {
-  const FlexibleWidget({Key? key}) : super(key: key);
+  const FlexibleWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -54,8 +54,8 @@ class FlexibleWidget extends StatelessWidget {
           color: Colors.tealAccent,
           border: Border.all(color: Colors.white),
         ),
-        child: Padding(
-          padding: const EdgeInsets.all(16.0),
+        child: const Padding(
+          padding: EdgeInsets.all(16.0),
           child: Text(
             'Flexible',
             style: TextStyle(color: Colors.teal, fontSize: 24),
